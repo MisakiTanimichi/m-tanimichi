@@ -1,0 +1,202 @@
+.top {
+  margin: 30px 0 40px;
+  width: 600px;
+
+  &__img {
+  }
+
+  &__border {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 600px;
+    height: 600px;
+    border: 1px solid $black;
+    border-radius: 10px;
+
+    &:hover {
+      transition: .3s;
+      opacity: .7;
+    }
+  }
+}
+
+.top--right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 285px;
+  height: 600px;
+
+  &__calender {
+    border: 1px solid $black;
+    box-sizing: border-box;
+    border-radius: 50%;
+    color: #fff;
+    position: relative;
+    height: 260px;
+    width: 260px;
+    margin: 0 auto 20px;
+    background-image: image-url("summer.png");
+    background-size: cover;
+
+    &:before {
+      z-index: 0;
+      content: "";
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color:rgba($black, 0.1);
+    }
+  }
+
+  &__year {
+    display: none;
+    position: absolute;
+    font-size: 18px;
+  }
+
+  &__month {
+    font-weight: bold;
+    position: absolute;
+    font-size: 25px;
+    top: 55px;
+    left: 90px;
+  }
+
+  &__date {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-size: 105px;
+  }
+
+  &__week {
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    top: 185px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__article {
+  }
+
+  &__title {
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    padding: 16px 0;
+    box-sizing: border-box;
+    border-top: solid 1px $black;
+    border-bottom: solid 1px $black;
+  }
+
+  &__item {
+    @include pie-clearfix;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 90px;
+    border-bottom: solid 1px rgba($black, 0.3);
+  }
+
+  &__img {
+    display: block;
+    float: left;
+    width: 62px;
+    height: 62px;
+    background-size: auto 100%;
+    background-position: center;
+    margin-right: 10px;
+
+    &:hover {
+      transition: .3s;
+      background-size: auto 120%;
+    }
+  }
+
+  &__text {
+    font-size: 10px;
+    line-height: 1.4;
+    font-weight: bold;
+    float: left;
+    width: 67%;
+  }
+
+  &__link {
+    color: $black;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// スマホのみ
+@media (max-width: $sp_max_width) {
+
+  .top {
+    margin: 20px 0;
+    width: 100%;
+
+    &__img {
+    }
+
+    &__border {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .top--right {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+
+    &__calender {
+      background-position: center;
+      border-radius: 0;
+      height: 100px;
+      width: 100%;
+      margin: 0 auto 20px;
+
+      &:before {
+        border-radius: 0;
+      }
+    }
+
+    &__month {
+      font-size: 25px;
+      top: 50%;
+      left: 20%;
+      -webkit-transform: translate(-20%,-50%);
+      -moz-transform: translate(-20%,-50%);
+      transform: translate(-20%,-50%);
+    }
+
+    &__date {
+      font-size: 75px;
+    }
+
+    &__week {
+      font-size: 20px;
+      top: 50%;
+      left: 80%;
+      -webkit-transform: translate(-80%,-50%);
+      -moz-transform: translate(-80%,-50%);
+      transform: translate(-80%,-50%);
+    }
+
+    &__item {
+      height: 100%;
+    }
+  }
+}

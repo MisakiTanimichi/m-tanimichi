@@ -1,0 +1,40 @@
+- content_for :og_title, "anpan 名刺デザイン"
+- content_for :og_description, "開発会社の名刺のデザインです。"
+- content_for :og_url, "http://m-tanimichi.com/pages/2018/0120"
+- content_for :og_image, "http://m-tanimichi.com/images/works/180120/1.jpg"
+
+- content_for :twitter_title, "anpan 名刺デザイン"
+- content_for :twitter_description, "開発会社の名刺のデザインです。"
+- content_for :twitter_image, "http://m-tanimichi.com/images/works/180120/1.jpg"
+
+== render partial: '/partials/article_top_works'
+
+main.main
+  section.section
+    .container
+      .contents--left
+        article.article-body
+          .category--work
+            |2018.1.20 |
+            a href="work" &nbsp;WORK
+          / .sns-share
+          /   .fb-share-button data-href="http://m-tanimichi.com/pages/171217" data-layout="button" data-size="small" data-mobile-iframe="true"
+          /     a.fb-xfbml-parse-ignore target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fm-tanimichi.com%2Fpages%2F171024&amp;src=sdkpreparse" &nbsp;&nbsp;&nbsp;シェア
+          / 
+          /   a.twitter-share-button data-lang="ja" data-text=("猫空カフェ 会報誌 vol.5") data-url="http://m-tanimichi.com/pages/171217" href="https://twitter.com/share" ツイート
+          /   javascript:
+          /     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+          h2.article-body__title
+            |anpan 名刺デザイン
+          .article-body__contents
+            p
+              img src="/images/works/180120/1.jpg" alt="anpan 名刺デザイン"
+              |エンジニアの方々が使われる名刺なので、
+              br
+              |カチッとしたイメージと遊び心が混ざりあったようなデザインにしました。
+              br
+              |今回はデータ納品だったのでデザインの詳細はありません〜。
+              
+                    
+      == render partial: '/partials/article_right_works'

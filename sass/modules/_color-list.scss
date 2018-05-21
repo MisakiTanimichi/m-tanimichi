@@ -1,0 +1,108 @@
+.color-list {
+  text-align: center;
+  font-weight: bold;
+
+  ul {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    margin-bottom: 30px;
+
+    a {
+      text-decoration: none;
+      color: black;
+      display: inline-block;
+      width: 16.6666%;
+      background-color: $light-gray;
+      line-height: 44px;
+
+      &:hover {
+        background-color: $pink;
+        color: #fff;
+        transition: .3s;
+      }
+    }
+  }
+
+  h5 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  h6 {
+  }
+
+  &__list {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    text-align: center;
+    margin-right: 5%;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &__round {
+    margin: 5px auto;
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+  }
+
+  &__item {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: $sp_max_width) {
+
+  .color-list {
+    font-weight: normal;
+
+    ul {
+      margin-bottom: 15px;
+    }
+
+    &__button {
+      margin-bottom: 20px;
+
+      a {
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+
+    h5 {
+      font-weight: bold;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+
+    h6 {
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    &__list {
+      width: 30%;
+      margin-right: 5%;
+    }
+
+    &__round {
+      margin: 5px auto;
+      width: 55px;
+      height: 55px;
+    }
+
+    &__item {
+      font-size: 9px;
+      line-height: 1.2;
+      margin-bottom: 5px;
+    }
+  }
+}

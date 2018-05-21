@@ -1,0 +1,50 @@
+- content_for :page_title, "100Vの陶芸生活 | "
+
+header.header
+  .container
+    .heading--top.mb50
+      span.heading--top__border
+      h3.heading--top__title
+        |100V MEMO
+        small 100Vの陶芸生活
+      span.heading--top__border
+      a.heading--top__back href="/" トップへ戻る
+      
+main.main
+  section.section
+    .container
+      == render partial: 'partials/article_right_100v'
+      .contents--left
+        .card--article
+          .card--article__item--two
+            a.card--article__thumb-box.tougei-4 href="/pages/170918"
+            .card--article__text-box
+              .category--tougei
+                |2017.9.18
+              a.card--article__link href="/pages/170918"
+                h4
+                  |【食器4点セット】ブルーグレーの4点セット
+          .card--article__item--two
+            a.card--article__thumb-box.tougei-3 href="/pages/170609"
+            .card--article__text-box
+              .category--tougei
+                |2017.6.9
+              a.card--article__link href="/pages/170609"
+                h4
+                  |【小鉢】茶碗を作るつもりが小鉢になってしまった
+          .card--article__item--two
+            a.card--article__thumb-box.tougei-2 href="/pages/170608"
+            .card--article__text-box
+              .category--tougei
+                |2017.6.8
+              a.card--article__link href="/pages/170608"
+                h4
+                  |【ごはん茶碗】黄色に変色したフチがいい！
+          .card--article__item--two
+            a.card--article__thumb-box.tougei-1 href="/pages/170607"
+            .card--article__text-box
+              .category--tougei
+                |2017.6.7
+              a.card--article__link href="/pages/170607"
+                h4
+                  |100Vコイル式電気窯買いました

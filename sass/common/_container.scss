@@ -1,0 +1,25 @@
+.container {
+  @include pie-clearfix;
+  margin: 0;
+  position: relative;
+
+
+  @media (min-width: $pc_min_width) {
+    @include pie-clearfix;
+    margin: 0 auto;
+    width: 900px;
+  }
+
+  // タブレット以下
+  @media (max-width: $tablet_max_width) {
+    @include pie-clearfix;
+    margin: 0 25px;
+  }
+}
+
+.container--wide {
+  @include pie-clearfix;
+  position: relative;
+  margin: 0;
+  width: 100%;
+}

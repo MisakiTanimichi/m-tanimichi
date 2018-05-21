@@ -1,0 +1,12 @@
+//基本のフォントスタイル
+body {
+  color: $black;
+  font-size: 14px;
+  font-family: "Helvetica", "游ゴシック体", "Yu Gothic", YuGothic, Osaka, sans-serif;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // text-align: justify;
+  // text-justify: inter-ideograph;
+}

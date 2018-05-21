@@ -1,0 +1,19 @@
+.bg {
+  padding: 50px 0;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: center, center;
+}
+
+.bg-ramen {
+  @extend .bg;
+  margin-top: 50px;
+  background-image:
+     linear-gradient(rgba($black, .2), rgba($black, .2)), image-url("test.jpg");
+}
+
+.bg-100v {
+  @extend .bg;
+  background-image:
+     linear-gradient(rgba($black, .2), rgba($black, .2)), image-url("100v/cover-2.jpg");
+}

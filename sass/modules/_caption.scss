@@ -1,0 +1,52 @@
+.caption {
+
+  &__img {
+    text-indent: -9999px;
+    display: block;
+    width: 100%;
+    line-height: 240px;
+    border: 1px solid $black;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+    border-radius: 10px;
+
+    &:hover {
+      transition: .3s;
+      opacity: .7;
+    }
+  }
+
+  &__content {
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.13em;
+  }
+
+  &__discription {
+    margin: 10px 0 30px;
+    font-size: 12px;
+    line-height: 1.9;
+  }
+}
+
+@media (max-width: $sp_max_width) {
+
+  .caption {
+
+    &__img {
+      width: calc(100vmin - 50px);
+      height: calc(100vmin - 50px);
+      margin-bottom: 20px;
+    }
+
+    &__discription {
+      margin: 10px 0 20px;
+      line-height: 1.7;
+    }
+  }
+}

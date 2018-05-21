@@ -1,0 +1,13 @@
+.pc-only {
+
+  @media (max-width: $sp_max_width) {
+    display: none;
+  }
+}
+
+.sp-only-bold {
+
+  @media (max-width: $sp_max_width) {
+    font-weight: bold;
+  }
+}

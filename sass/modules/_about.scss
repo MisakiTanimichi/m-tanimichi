@@ -1,0 +1,192 @@
+.about {
+
+  //上の説明文
+  &--box {
+    text-align: center;
+    padding: 80px 0;
+    box-sizing: border-box;
+    border: 1px solid $black;
+    margin-bottom: 60px;
+    background-image: image-url("about-img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    &__logo {
+      margin: 0 auto;
+      width: 206px;
+      height: 29px;
+      background-image: image-url("logo.svg");
+      background-size: cover;
+    }
+
+    &__text {
+      margin: 0 auto;
+      margin-top: 40px;
+      font-size: 14px;
+      line-height: 2.5;
+    }
+  }
+
+  //自己紹介部分
+  &--self {
+    @include pie-clearfix;
+    margin-bottom: 80px;
+
+    &__img {
+      float: left;
+      width: 380px;
+      height: 380px;
+      box-sizing: border-box;
+      border: 1px solid $black;
+      background-image: image-url("p-misaki3.jpg");
+      background-size: cover;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      position: relative;
+
+      // &:after {
+      //   content: "Photo by Kohei Omachi";
+      //   position: absolute;
+      //   bottom: 10px;
+      //   left: 10px;
+      //   font-size: 12px;
+      // }
+    }
+
+    &__content {
+      float: right;
+      margin-top: 5px;
+      width: 400px;
+    }
+
+    &__name {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 0.13em;
+
+      small {
+        display: inline-block;
+        font-size: 13px;
+      }
+
+      p {
+        vertical-align: middle;
+        margin-left: 15px;
+        display: inline-block;
+      }
+    }
+
+    &__text {
+      font-size: 13px;
+      line-height: 2;
+      margin: 20px 0 10px;
+    }
+
+    &__sns {
+      margin-bottom: 15px;
+      font-size: 13px;
+
+      a {
+        text-decoration: none;
+        color: $pumpkin;
+
+        &:hover {
+          transition: .3s;
+          opacity: .5;
+        }
+      }
+    }
+
+    &__contact {
+      border-top: 1px $black dotted;
+      border-bottom: 1px $black dotted;
+      padding: 15px 0;
+      line-height: 1.8;
+      font-size: 11px;
+    }
+
+    &__mail {
+      color: $black;
+      text-decoration: none;
+      font-size: 14px;
+
+      &:hover {
+        transition: .3s;
+        opacity: .3;
+      }
+    }
+  }
+}
+
+@media (max-width: $sp_max_width) {
+
+  .about {
+
+    //上の説明文 スマホ
+    &--box {
+      padding: 40px;
+      margin-bottom: 30px;
+      background-size: cover;
+
+      &__logo {
+        width: 170px;
+        height: 24px;
+      }
+
+      &__text {
+        margin-top: 20px;
+        font-size: 11px;
+        line-height: 1.9;
+      }
+    }
+
+    //自己紹介部分 スマホ
+    &--self {
+      margin-bottom: 20px;
+
+      &__img {
+        float: none;
+        width: calc(100vmin - 50px);
+        height: calc(100vmin - 50px);
+        background-size: cover;
+        background-position: bottom center;
+      }
+
+      &__content {
+        float: none;
+        margin-top: 20px;
+        width: 100%;
+      }
+
+      &__name {
+        font-size: 15px;
+        letter-spacing: 0.13em;
+
+        small {
+          font-size: 10px;
+        }
+
+        p {
+          margin-left: 10px;
+        }
+      }
+
+      &__text {
+        font-size: 10px;
+        line-height: 2;
+        margin: 10px 0;
+      }
+
+      &__contact {
+        padding: 10px 0;
+        line-height: 1.8;
+        font-size: 10px;
+      }
+
+      &__mail {
+        font-size: 13px;
+      }
+    }
+  }
+}

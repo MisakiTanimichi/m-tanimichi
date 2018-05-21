@@ -1,0 +1,119 @@
+//一覧表示のカード（内容横3列）、top-cardsがつくと横4列、top-cards-fiveがつくと横5列
+.card--three {
+  @extend .card;
+  margin-bottom: 0;
+
+  &.top-cards,
+  &.top-cards-five {
+    @extend .card;
+  }
+
+  &__item {
+    @extend .card__item;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+
+    &:nth-child(3n) {
+      margin: 0 0 10px 0;
+    }
+
+    &:hover .card--three__figcaption {
+      opacity: 1;
+    }
+
+    &.top-cards {
+      @extend .card--three__item;
+      width: 217.5px;
+      height: 217.5px;
+
+      &:nth-child(3n) {
+        margin: 0 10px 10px 0;
+      }
+
+      &:nth-child(4n) {
+        margin: 0 0 10px 0;
+      }
+    }
+
+    &.top-cards-five {
+      @extend .card--three__item;
+      width: 172px;
+      height: 172px;
+
+      &:nth-child(3n) {
+        margin: 0 10px 10px 0;
+      }
+
+      &:nth-child(5n) {
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+
+  &__thumb-box {
+    @extend .card__thumb-box;
+    height: 200px;
+    background-size: cover;
+
+    &.top-cards {
+      @extend .card--three__thumb-box;
+      height: 217.5px;
+    }
+
+    &.top-cards-five {
+      @extend .card--three__thumb-box;
+      height: 172px;
+    }
+  }
+
+  &__figcaption {
+    @extend .card__figcaption;
+    width: 200px;
+    height: 200px;
+    padding: 70px 15px 0;
+
+    &.top-cards {
+      @extend .card--three__figcaption;
+      width: 217.5px;
+      height: 217.5px;
+      padding: 80px 15px 0;
+    }
+
+    &.top-cards-five {
+      @extend .card--three__figcaption;
+      width: 172px;
+      height: 172px;
+      padding: 65px 15px 0;
+    }
+  }
+}
+
+@media (max-width: $sp_max_width) {
+  .card--three {
+
+    &__item {
+      width: calc(100vmin / 2 - 30px);
+      height: calc(100vmin / 2 - 30px);
+
+      &:nth-child(3n) {
+        margin: 0 10px 0 0;
+      }
+
+      &:nth-child(2n) {
+        margin: 0 0 10px 0;
+      }
+    }
+
+    &__thumb-box {
+      height: calc(100vmin / 2 - 30px);
+    }
+
+    &__figcaption {
+      width: calc(100vmin / 2 - 30px);
+      height: calc(100vmin / 2 - 30px);
+      padding: 40px 15px 0;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+//記事のカードスタイル
+.card--article {
+  @extend .card;
+
+  &__item {
+    @extend .card__item;
+    width: 293.33px;
+    height: 270px;
+
+    &:nth-child(3n) {
+      margin: 0 0 10px 0;
+    }
+  }
+
+  &__thumb-box {
+    @extend .card__thumb-box;
+    background-size: 100% auto;
+
+    &:hover {
+      background-size: 120% auto;
+    }
+  }
+
+  &__text-box {
+    padding: 15px;
+  }
+
+  &__link {
+    @extend .card__link;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.6;
+  }
+
+  &__item--two {
+    @extend .card__item;
+    width: 305px;
+    height: 270px;
+
+    &:nth-child(2n) {
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+@media (max-width: $sp_max_width) {
+
+  .card--article {
+
+    &__item {
+      float: none;
+      width: 100%;
+      height: 100%;
+
+      &:nth-child(3n) {
+        margin: 0;
+      }
+    }
+
+    &__text-box {
+      padding: 15px;
+    }
+
+    &__link {
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    &__item--two {
+      float: none;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

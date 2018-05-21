@@ -1,0 +1,22 @@
+.global-header {
+  height: 50px;
+
+  &__item {
+  }
+
+  &__menu {
+    font-weight: bold;
+    text-decoration: none;
+    color: $black;
+    padding: 0 0 0 15px;
+    font-size: 13px;
+    line-height: 50px;
+    display: block;
+
+    &:hover {
+      background-color: darken($light-gray, 10%);
+      color: #fff;
+      transition: .3s;
+    }
+  }
+}

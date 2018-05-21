@@ -1,0 +1,64 @@
+.category {
+  font-size: 12px;
+  color: rgba($black, 0.5);
+  margin-bottom: 5px;
+
+  a {
+    font-weight: bold;
+    text-decoration: none;
+    pointer-events: none;
+
+    &:hover {
+      transition: 0.3s;
+      opacity: 0.5;
+    }
+  }
+
+  &--favorite {
+    @extend .category;
+
+    a {
+      color: $pink;
+    }
+  }
+
+  &--work {
+    @extend .category;
+
+    a {
+      color: $emerald;
+    }
+  }
+
+  &--design {
+    @extend .category;
+
+    a {
+      color: $red;
+    }
+  }
+
+  &--walk {
+    @extend .category;
+
+    a {
+      color: $pumpkin;
+    }
+  }
+
+  &--health {
+    @extend .category;
+
+    a {
+      color: $green;
+    }
+  }
+
+  &--tougei {
+    @extend .category;
+
+    a {
+      color: $light-blue;
+    }
+  }
+}

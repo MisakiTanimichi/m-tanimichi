@@ -1,0 +1,41 @@
+- content_for :og_title, "ひたすら猫、猫、猫！のMV U-zhaan×環ROY×鎮座DOPENESS feat.矢野顕子の新曲「にゃー」"
+- content_for :og_description, "本日、YouTubeにて公開されたミュージックビデオ「にゃー feat.矢野顕子」が、猫好きさん必見なので、ご紹介。"
+- content_for :og_url, "http://m-tanimichi.com/pages/170723"
+- content_for :og_image, "http://m-tanimichi.com/images/blog/170723/1.jpg"
+
+- content_for :twitter_title, "ひたすら猫、猫、猫！のMV U-zhaan×環ROY×鎮座DOPENESS feat.矢野顕子の新曲「にゃー」"
+- content_for :twitter_description, "本日、YouTubeにて公開されたミュージックビデオ「にゃー feat.矢野顕子」が、猫好きさん必見なので、ご紹介。"
+- content_for :twitter_image, "http://m-tanimichi.com/images/blog/170723/1.jpg"
+
+== render partial: '/partials/article_top'
+
+main.main
+  section.section
+    .container
+      .contents--left
+        article.article-body
+          .category--favorite
+            |2017.9.00 |
+            a href="favorite" &nbsp;FAVORITE
+          .sns-share
+            .fb-share-button data-href="http://m-tanimichi.com/pages/170723" data-layout="button" data-mobile-iframe="true" data-size="small" 
+              a.fb-xfbml-parse-ignore href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fm-tanimichi.com%2Fpages%2F170723&amp;src=sdkpreparse" target="_blank" &nbsp;&nbsp;&nbsp;シェア
+            a.twitter-share-button data-lang="ja" data-text=("ひたすら猫、猫、猫！のMV U-zhaan×環ROY×鎮座DOPENESS feat.矢野顕子の新曲「にゃー」") data-url="http://m-tanimichi.com/pages/170723" href="https://twitter.com/share" ツイート
+            javascript:
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+          h2.article-body__title
+            |この年になって化粧品を新調しました
+          .article-body__contents
+            p
+              |チャリ30kmこいでも崩れない！すごい！
+              
+            .info
+              table
+                tbody
+                  tr
+                    th U-zhaan
+                    td
+                      a href="http://u-zhaan.com" target="blank" http://u-zhaan.com
+                
+      == render partial: '/partials/article_right'

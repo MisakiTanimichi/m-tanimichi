@@ -1,0 +1,61 @@
+/ - content_for :page_title, "トップ | "
+- content_for :og_title, "magazine tanimichi | 谷道みさきのwebエッセイマガジン"
+- content_for :og_description, "magazine tanimichiはデザインや写真、猫などわたしの好きなものを集めたwebエッセイマガジンです。"
+- content_for :og_url, "http://m-tanimichi.com"
+- content_for :og_image, "http://m-tanimichi.com/images/ogp.jpg"
+
+- content_for :twitter_title, "magazine tanimichi | 谷道みさきのwebエッセイマガジン"
+- content_for :twitter_description, "magazine tanimichiはデザインや写真、猫などわたしの好きなものを集めたwebエッセイマガジンです。"
+- content_for :twitter_image, "http://m-tanimichi.com/images/ogp.jpg"
+
+header.header
+  .container
+    .heading--logo
+      h1.heading--logo__img
+      p.heading--logo__title
+        |デザイン、写真、猫など 趣味を楽しむwebエッセイマガジン | magazine tanimichi
+
+main.main
+  section.section
+    .container
+      .top
+        h2.slider
+          .top__img
+            a href="/works"
+              img.top__border src="images/slider/works.jpg" alt="お仕事まとめ"
+          .top__img
+            a href="https://conatam.shopinfo.jp/" target="blank"
+              img.top__border src="images/slider/conatam.jpg" alt="conatam"
+          .top__img
+            a href="/diary"
+              img.top__border src="images/slider/diary.jpg" alt="ひびはんせい日記"
+          .top__img
+            a href="/tamala"
+              img.top__border src="images/slider/tamala.jpg" alt="たまら研究所"
+          .top__img
+            a href="/blog"
+              img.top__border src="images/slider/blog.jpg" alt="うつノート"
+          .top__img
+            a href="/niccho"
+              img.top__border src="images/slider/snap.jpg" alt="にっちょくん"
+      == render partial: 'partials/top_right'
+
+  section.section
+    .container
+      == render partial: 'partials/top_diary'
+      == render partial: 'partials/top_blog'
+      == render partial: 'partials/top_niccho'
+      == render partial: 'partials/top_works'
+      a.top-banner href='tamala'
+        img src="images/banner-tamaken.jpg" alt="たまら研究所" width= '100%'
+      a.top-banner href='https://store.line.me/stickershop/product/1431232' target="blank"
+        img src="images/banner-stamp.jpg" alt="LINEスタンプ" width= '100%'
+      a.top-banner href='https://conatam.shopinfo.jp/' target="blank"
+        img src="images/banner-conatam2.jpg" alt="conatam" width= '100%'
+  
+  section.section.bg-ramen
+    .container
+      == render partial: 'partials/top_100v'
+  section.section.bg-100v
+    .container
+      == render partial: 'partials/top_100v'

@@ -1,0 +1,57 @@
+//たまら研究所のカードスタイル（内容横2列）
+.card--two {
+  @extend .card;
+  margin-bottom: 0;
+
+  &__item {
+    @extend .card__item;
+    position: relative;
+    overflow: hidden;
+    width: 305px;
+    height: 400px;
+
+    &:nth-child(2n) {
+      margin: 0 0 10px 0;
+    }
+
+    &:hover .card--two__figcaption {
+      opacity: 1;
+    }
+  }
+
+  &__thumb-box {
+    @extend .card__thumb-box;
+    height: 400px;
+    background-size: cover;
+  }
+
+  &__figcaption {
+    @extend .card__figcaption;
+    width: 305px;
+    height: 400px;
+    padding: 175px 15px 0;
+
+    h4 {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: $sp_max_width) {
+
+  //たまら研究所のカードスタイル（内容横2列）
+  .card--two {
+
+    &__item {
+      width: 100%;
+
+      &:nth-child(2n) {
+        margin: 0 0 10px 0;
+      }
+    }
+
+    &__figcaption {
+      width: 100%;
+    }
+  }
+}

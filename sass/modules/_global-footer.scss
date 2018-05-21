@@ -1,0 +1,43 @@
+.global-footer {
+
+  &__content {
+    background-color: $black;
+    padding: 43px;
+    text-align: center;
+  }
+
+  &__logo {
+    margin: 0 auto;
+    background-image: image-url("logo--white.svg");
+    width: 222px;
+    height: 32px;
+  }
+
+  small {
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: $sp_max_width) {
+
+  .global-footer {
+
+    &__content {
+      padding: 30px;
+    }
+
+    &__logo {
+      background-size: cover;
+      width: 150px;
+      height: 22px;
+    }
+
+    small {
+      margin-top: 10px;
+    }
+  }
+
+}

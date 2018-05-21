@@ -1,0 +1,14 @@
+.totop {
+  display: block;
+  line-height: 50px;
+  text-indent: -9999px;
+  background-image: image-url("icon/totop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px;
+
+  &:hover {
+    transition: .3s;
+    background-color: darken($light-gray, 2%);
+  }
+}

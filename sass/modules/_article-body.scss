@@ -1,0 +1,259 @@
+.article-body {
+  padding: 30px;
+  box-sizing: border-box;
+  border: solid $black 1px;
+  border-radius: 10px;
+
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    line-height: 1.7;
+  }
+
+  h3 {
+    background-color: $light-gray;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 21px 18px 20px;
+    border-radius: 5px;
+    margin: 30px 0 20px;
+  }
+
+  p {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: bold;
+    text-align: left;
+
+    a {
+      text-decoration: none;
+      color: $pumpkin;
+
+      &:hover {
+        opacity: .5;
+        transition: .3s;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    margin: 20px 0 20px;
+
+    &:first-child {
+      margin: 0 0 20px;
+    }
+  }
+
+  blockquote {
+
+    p {
+    margin: 15px 0;
+    line-height: 1.6;
+    font-size: 13px;
+    color: darken($light-gray, 60%);
+    padding: 1em 1em 1em 2.6em;
+    border-left: 5px solid darken($light-gray, 20%);
+    // position: relative;
+    }
+
+    small {
+      display: block;
+      font-size: 12px;
+      color: darken($light-gray, 30%);
+      margin-top: 10px;
+    }
+  }
+
+  .quote {
+    font-weight: bold;
+    font-size: 10px;
+    color: darken($light-gray, 30%);
+    line-height: 1.8;
+
+    img {
+      margin: 0 0 0 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: darken($light-gray, 30%);
+
+      &:hover {
+        opacity: .5;
+        transition: .3s;
+      }
+    }
+  }
+
+  // blockquote:after{
+  // position: absolute;
+  // bottom: 0;
+  // right: 0;
+  // content: '”';
+  // font-size: 6em;
+  // opacity: .1;
+  // }
+
+  .info {
+    width: 100%;
+    background-color: $light-gray;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  h4, th, td {
+    font-size: 14px;
+    line-height: 2.3;
+    font-weight: bold;
+  }
+
+  h4 {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-top: solid 1px $black;
+    border-bottom: solid 1px $black;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th {
+    vertical-align: top;
+  }
+
+  td {
+    padding-left: 20px;
+    font-weight: normal;
+
+    a {
+      text-decoration: none;
+      color: $black;
+
+      &:hover {
+        color: $pumpkin;
+        transition: .3s;
+      }
+    }
+  }
+
+  .url {
+    text-decoration: none;
+    color: $black;
+
+    &:hover {
+      color: $pumpkin;
+      transition: .3s;
+    }
+  }
+
+  .sns-share {
+    margin-top: 10px;
+
+    .fb-share-button {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 15px;
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        line-height: 20px;
+        background-image: image-url("fb-logo-white.png"), linear-gradient(#4267b2, #4267b2);
+        background-repeat: no-repeat;
+        background-position: 6px 4px, top;
+        background-size: 15%, cover;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        width: 75px;
+        border-radius: 3px;
+
+        &:hover {
+          background-image: image-url("fb-logo-white.png"), linear-gradient(darken(#4267b2, 8%), darken(#4267b2, 8%));
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $sp_max_width) {
+
+  .article-body {
+    padding: 15px;
+
+    &__title {
+      font-size: 14px;
+      margin: 10px 0 20px;
+      line-height: 1.7;
+    }
+
+    h3 {
+      font-size: 13px;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 0 0 15px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 12px;
+      line-height: 1.8;
+      font-weight: normal;
+
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    img {
+      margin: 15px 0;
+
+      &:first-child {
+        margin: 0 0 15px;
+      }
+    }
+
+    blockquote {
+
+      p {
+      margin: 15px 0;
+      line-height: 1.8;
+      font-size: 11px;
+      }
+
+      small {
+        font-size: 10px;
+        margin-top: 10px;
+      }
+    }
+
+    .info {
+      padding: 15px;
+    }
+
+    h4, th, td {
+      display: block;
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    h4 {
+      padding: 10px 0;
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    td {
+      padding-left: 10px;
+      font-weight: normal;
+    }
+  }
+}

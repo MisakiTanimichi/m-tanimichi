@@ -1,0 +1,27 @@
+.contents--left {
+  float: left;
+  width: 620px;
+  margin-bottom: 80px;
+}
+
+.contents--right {
+  float: right;
+  width: 240px;
+  margin-bottom: 80px;
+}
+
+// スマホのみ
+@media (max-width: $sp_max_width) {
+
+  .contents--left {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contents--right {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
